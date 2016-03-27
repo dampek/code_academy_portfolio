@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' href='style.css'/>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,500,700' rel='stylesheet' type='text/css'>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <%= link_to home_path do %>
+          <h2>Julian Jose</h2>
+          <% end %>
+        </div>
+      <div class="pull-right">
+      <ul style="list-style-type:none" class="nav nav-pills red">
+        <li role="presentation">
+          <%= link_to welcome_path do %>Welcome<% end %>
+        </li>
+        <li role="presentation"><%= link_to home_path do %>Portfolio<% end %></li>
+        <li role="presentation"><%= link_to about_path do %>About me<% end %></li>
+        <li role="presentation"><%= link_to contact_path do %>Contact<% end %></li>
+        <li role="presentation"><%= link_to next_step_path do %>Next step<% end %></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<%= yield %>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+       <a href="#"><img height="25%" width="5%" src="http://www.smtusa.com/uploads/fb_icon_325x325.png"/></a>
+      <a href="#"><img  height="25%" width="5%" src="http://www.marketingfinger.com/wp-content/uploads/2013/06/transparent-Linkedin-logo-icon.png"/></a>
+       <a href="#"><img height="25%" width="5%" src="http://www.ya-graphic.com/wp-content/uploads/2015/12/twitter-logo-190x122.jpg"/></a>
+         </div>
+      <div class="row">
+      <p>Developed by Julian Jose</p>
+      </div>
+      </div>,
+    </div>
+
+  
+</body>
+</html>

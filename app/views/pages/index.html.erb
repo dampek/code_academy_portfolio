@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <div class="container">
+    
+  </div>
+</div>
+
+<div class="pages">
+<div class="container">
+<div class="row">
+  <% @pages.each do |page| %>
+  <%= link_to page do %>
+  <div class="col-md-6">
+  <img src=" <%= page.cover %> ">
+  <h3 class="title"> <%= page.title %> </h3>
+  <p class="artist"> <%= page.artist %> </p>
+ </div>
+	  <% end %>
+    <% end %>
+
+ </div>
+ </div>
+</div>
+  	<%= link_to 'New Job', new_path %>

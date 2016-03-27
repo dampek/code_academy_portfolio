@@ -1,0 +1,137 @@
+/* frame */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/armando-perez/brand.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+p:hover, p:visited, p:link, p:active {
+    text-decoration: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar .row li {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+
+.nav-pills a {
+    color: red;
+}
+
+.footer .container {
+ 	height: 200px;
+}
+
+.footer .container .row {
+  margin-right: 80px;
+}
+
+.footer .container img {
+  margin-top: 70px;
+  padding: 10px;
+  float: right;
+}
+
+.footer .container p {
+ 	float: right; 
+}
+
+/* welcome */
+.main {
+  background: url(https://photos-1.dropbox.com/t/2/AABIlQK670IP-uOt19d-fkBOt5AnvgL6YL62VNN3rwtXCA/12/521664200/jpeg/32x32/1/_/1/2/nyc_skyline.jpg/EOHkubEEGAEgAigC/CXt7_Ec3VwtsZrZAw8fgP2I8X6-vZVeCJSXAwqwaTNY?size_mode=5) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.main .row {
+  margin-right: 150px;
+}
+
+.main h1 {
+  color: white;
+  width: 700px;
+  font-size: 40px;
+  text-shadow: 0 0 0.2em red;
+  margin-top: 100px;
+  text-align: right;
+  float: right;
+}
+
+.main a {
+ 	text-decoration: none; 
+}
+
+.main_btn {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  margin-top: 20px;
+  float: right;
+}
+
+.main_btn:hover {
+	background-color:#df61eb;
+  color: white;
+}
+.main_btn:active {
+	position:relative;
+	top:1px;
+}
+
+/* pages */
+.jumbotron {
+  background: url(http://cache2.asset-cache.net/gc/142742146-house-keys-on-a-table-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=ijQsfFvcAohMG2HW5iawrG1QCoF1XSdD6j%2BfAogpb2eBSz7VUpiXJ12%2BVsk%2BKKHW) no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.pages .container {
+  width: 74%;
+ 	text-align: center;
+}
+
+.pages .col-md-6 {
+  height: 430px;
+}
+
+.col-md-6 {
+ color: black;
+}
+
+.pages .container .row div:hover {
+  color: red;
+  transition: color 0.5s;
+}
+
+/* show */
+.show .container .back p {
+ text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+

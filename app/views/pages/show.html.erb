@@ -1,0 +1,30 @@
+<div class="show">
+  <div class="container">
+    
+	<div class="back">
+  <%= link_to home_path do %>
+  <p>Back</p><% end %>
+	</div>
+    
+  <div class="head-title">
+    <h3 class="page-title"> <%= @page.title %> </h3>
+  </div>
+    
+	<div class="row">
+ 	 	<div class="col-md-4">
+    	<div class="cover"><img src=" <%= @page.cover %> ">
+      <p class="page-artist"> <%= @page.artist %> </p>
+      </div>
+  		</div>
+  	<div class="col-md-8">
+			<% @jobs.each do |job| %>
+    		<div class="job-row">
+      	<div class="name"> <%= job.name %> </div>
+ 				<% end %>
+				</div>
+		</div>
+  </div>
+    
+</div>
+</div>
+    
